@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) 
+{
+	
+	int a, b, c, d, md;
+
+printf("Pesquisa de Satisfacao: \nAtribua notas de 0 a 10 ");
+printf("\n\nQual nota atribui para Obra 150 anos de Santos Dumont? \nSua resposta = ");
+scanf("%i", &a);
+
+printf("\n\nQual nota atribui para 100 anos da semana de arte moderna? \nSua resposta = ");
+scanf("%i", &b);
+
+printf("\n\nQual nota atribui para Jogos olímpicos de Paris de 2024? \nSua resposta = ");
+scanf("%i", &c);
+
+printf("\n\nQual nota atribui para a Obra dos dinossauros? \nSua resposta = ");
+scanf("%i", &d);
+
+md=(a+b+c+d)/4;
+
+printf("Media de Satisfacao= %i\n\n", md);
+
+
+ FILE *file;
+    file = fopen ("pesquisa.csv", "a");
+    fprintf(file, "%d", md);
+    fprintf(file, "\n");
+    fclose(file);
+   
+    if (file == NULL)
+    {
+        printf("arquivo não pode ser aberto");
+    }
+   
+   
+    return 0;
+}
