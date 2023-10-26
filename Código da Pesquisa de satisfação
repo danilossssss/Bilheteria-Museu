@@ -36,7 +36,9 @@ printf("Media de Satisfacao= %i\n\n", md);
     {
         printf("arquivo não pode ser aberto");
     }
-   
+
+
+  system ("pause");
    
     return 0;
 }
