@@ -45,6 +45,7 @@ m=(a2+b2+c2+d2)/4;
    
    
  
+  system ("pause");
    
     return 0;
 }
