@@ -1,6 +1,6 @@
 Olá!
 
-O sistema de gerenciamento do Museu faz partes de três sistemas:
+O sistema de gerenciamento faz partes de três sistemas:
 Bilheteria, Pesquisa de Satisfação e Contabilidade.
 
 Está em anexo os códigos dos três sistemas, e também o arquivo que é executável. 
